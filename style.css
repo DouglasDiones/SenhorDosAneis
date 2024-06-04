@@ -1,0 +1,139 @@
+/*Comando para adicionar uma nova fonte local ao css*/
+@font-face {
+    font-family: 'SenhorDosAneis';
+    src: url('fonts/LOTR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+/* O asterisco é uma chamada universal, então aplica em tudo*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'SenhorDosAneis', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --yellow: #c7a200;
+    --white: #fff;
+    --dark: #1e1c2a;
+
+}
+
+body{
+    color: var(--dark);
+    background: var(--white);
+}
+
+.navigation{
+    /* o display: flex serve para deixar um do lado do outro*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo{
+    color: var(--yellow);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    /*gap serve para dar um espaçamento entre os itens da ul*/
+    gap: 5rem;
+}
+
+.navigation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+/*esta parte muda a cor dos itens quando o mouse esta em cima*/
+.navigation ul li a:hover{
+    color: var(--yellow);
+}
+
+.navigation i{
+    /*o cursor: pointer serve para quando passa o mouse em cima virar a maozinha*/
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(2){
+    background: var(--yellow);
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.home-text{
+    max-width: 37rem;
+}
+
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 3.8rem;
+}
+
+.home-text p{
+    margin-bottom: 4rem;
+}
+
+.home-btn{
+    padding: 15px 45px;
+    background: var(--yellow);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.home-btn:hover{
+    background: #927801 ;
+}
+
+.home-img img{
+    width: 100%;
+    height: 100%;
+}
+
