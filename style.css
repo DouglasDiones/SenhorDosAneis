@@ -173,4 +173,22 @@ body{
     .nav-item{
         margin: 16px 0;
     }
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        gap: 5rem;
+    }
+    .home.text-h4{
+        font-size: 15px;
+    }
+
+    .home.text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+
+    }
 }
